@@ -10,13 +10,17 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2265" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_person.xml" value="0.1215" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_profile.xml" value="0.2265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/fragment_task.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/item_onboard.xml" value="0.253125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/item_task.xml" value="0.253125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/on_boarding_fragment.xml" value="0.253125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/ragment_onboarding.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

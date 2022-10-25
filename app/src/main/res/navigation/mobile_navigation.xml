@@ -19,17 +19,22 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.taskmanager.ui.notifications.NotificationsFragment"
+        android:name="com.example.taskapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.taskapp.ui.profile.ProfileFragment"
-        android:label="@string/title_fragment"
+        android:name="com.example.taskapp.ProfileFragment"
+        android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/taskFragment"
         android:name="com.example.taskapp.ui.task.TaskFragment"
-        android:label="Task"
+        android:label="fragment_task"
         tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/onBoardinfFragment"
+        android:name="com.example.taskapp.ui.onBoarding.onBoardingFragment"
+        android:label="fragment_onBoarding"
+        tools:layout="@layout/on_boarding_fragment" />
 </navigation>

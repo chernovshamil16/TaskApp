@@ -6,24 +6,39 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.taskapp.data.Task
 import com.example.taskapp.databinding.ItemTaskBinding
 
-class TaskAdapter:RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
+class TaskAdapter: RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
+    private var task= arrayListOf<Task>()
 
-    private val tasks = arrayListOf<Task>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
-        return TaskViewHolder(ItemTaskBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+        return TaskViewHolder(
+            ItemTaskBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
+    }
+    fun addTask(tasks: Task){
+        task.add(0, tasks)
+        notifyItemChanged(0)
+
     }
 
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         holder.bind()
     }
 
-    override fun getItemCount(): Int = tasks.size
-    inner class TaskViewHolder(private val binding: ItemTaskBinding): RecyclerView.ViewHolder(binding.root) {
+    override fun getItemCount() =task.size
+
+    inner class TaskViewHolder(private var binding: ItemTaskBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(){
-            val item = tasks[adapterPosition]
-            binding.tvTitle.text = item.title
-            binding.tvDescription.text = item.description
+            val item = task[adapterPosition]
+            binding.title.text = item.title
+            binding.desc.text = item.desc
+
+
         }
     }
+
 }

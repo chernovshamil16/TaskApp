@@ -1,7 +1,7 @@
 package com.example.taskapp.data
+import java.io.Serializable
 
 data class Task(
-    var title: String? = null,
-    var description: String? = null,
-    var time: Long? = null
-)
+    val title:String,
+    val desc:String
+):Serializable

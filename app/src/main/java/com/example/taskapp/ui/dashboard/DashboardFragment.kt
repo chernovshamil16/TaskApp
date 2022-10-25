@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.taskapp.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -20,8 +22,13 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
-        return binding.root
+        val root: View = binding.root
+
+        val textView: TextView = binding.textDashboard
+        return root
     }
 
     override fun onDestroyView() {
@@ -29,5 +36,3 @@ class DashboardFragment : Fragment() {
         _binding = null
     }
 }
-
-
