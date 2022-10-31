@@ -1,5 +1,7 @@
 package com.example.taskapp.ui.task
 
+import com.example.taskapp.data.Task
+import com.example.taskapp.ui.home.HomeFragment
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,8 +11,6 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.fragment.findNavController
-import com.example.taskapp.data.Task
-import com.example.taskapp.ui.home.HomeFragment
 
 class TaskFragment : Fragment() {
     private  lateinit var binding:com.example.taskapp.databinding.FragmentTaskBinding
@@ -26,8 +26,8 @@ class TaskFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnAdd.setOnClickListener{
             val task = Task(
-                title = binding.edTitle.text.toString() ,
-                desc = binding.edDesc.text.toString()
+                title = binding.edTitle.toString(),
+                desc = binding.edDesc.toString()
             )
             setFragmentResult(
                 HomeFragment.TASK , bundleOf("key_task" to task)

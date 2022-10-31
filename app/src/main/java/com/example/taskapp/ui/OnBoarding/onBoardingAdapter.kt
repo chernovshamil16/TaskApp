@@ -1,18 +1,21 @@
 package com.example.taskapp.ui.onBoarding
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.taskapp.R
 import com.example.taskapp.data.onBoard
-import com.example.taskapp.databinding.ItemOnboardBinding
+import com.example.taskapp
+.databinding.ItemOnboardBinding
 
 class onBoardingAdapter(private val onClick : () -> Unit) : RecyclerView.Adapter<onBoardingAdapter.onBoardingViewHolder>() {
     private val array = arrayListOf<onBoard>(
-        onBoard(title = "Title = 1" , "desc=1" , R.drawable.img),
-        onBoard(title = "Title = 2" , "desc=2" , R.drawable.img_2),
-        onBoard(title = "Title = 3" , "desc=3" , R.drawable.img_3png)
+        onBoard(title = "Title = 1" , "desc=1" , R.raw.item_onboard),
+        onBoard(title = "Title = 2" , "desc=2" , R.raw.item_onboard_2),
+        onBoard(title = "Title = 3" , "desc=3" , R.raw.typing)
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): onBoardingViewHolder {
@@ -29,6 +32,7 @@ class onBoardingAdapter(private val onClick : () -> Unit) : RecyclerView.Adapter
         fun bind(onBoard: onBoard) {
             binding.textTitle.text = onBoard.title
             binding.textDesc.text = onBoard.desc
+            binding.ImageView.setAnimation(onBoard.image)
             binding.btnStart.isVisible = adapterPosition == array.lastIndex
             binding.textSkip.isVisible = adapterPosition != array.lastIndex
             binding.btnStart.setOnClickListener{
@@ -37,7 +41,6 @@ class onBoardingAdapter(private val onClick : () -> Unit) : RecyclerView.Adapter
             binding.textSkip.setOnClickListener{
                 onClick()
             }
-
         }
     }
 }

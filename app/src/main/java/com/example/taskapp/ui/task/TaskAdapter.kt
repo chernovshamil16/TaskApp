@@ -3,8 +3,8 @@ package com.example.taskapp.ui.task
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.taskapp.data.Task
 import com.example.taskapp.databinding.ItemTaskBinding
+import com.example.taskapp.data.Task
 
 class TaskAdapter: RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
     private var task= arrayListOf<Task>()
@@ -36,8 +36,6 @@ class TaskAdapter: RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
             val item = task[adapterPosition]
             binding.title.text = item.title
             binding.desc.text = item.desc
-
-
         }
     }
 

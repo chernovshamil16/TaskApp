@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/castom_input.xml" value="0.163" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/corners.xml" value="0.2265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/drawable/ic_edit.xml" value="0.2265" />
@@ -22,6 +23,8 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/on_boarding_fragment.xml" value="0.253125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/layout/ragment_onboarding.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.163" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TaskApp2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.163" />
       </map>
     </option>
   </component>
