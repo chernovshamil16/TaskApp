@@ -1,18 +1,19 @@
 package com.example.taskapp.ui.onBoarding
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.taskapp.local.PrefOnBoarding
 import com.example.taskapp.databinding.OnBoardingFragmentBinding
+import com.example.taskapp.local.PrefOnBoarding
+
 
 class onBoardingFragment: Fragment() {
     private lateinit var pref: PrefOnBoarding
 
-    private lateinit var binding:OnBoardingFragmentBinding
+    private lateinit var binding: OnBoardingFragmentBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

@@ -1,11 +1,9 @@
 package com.example.taskapp.ui.onBoarding
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.taskapp.R
 import com.example.taskapp.data.onBoard
 import com.example.taskapp
